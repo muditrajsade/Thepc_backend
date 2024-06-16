@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        p {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        form {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="file"],
+        .form-group input[type="text"] {
+            padding: 8px;
+            font-size: 1em;
+        }
+
+        .form-group input[type="text"] {
+            margin-top: 5px;
+        }
+
+        .form-group:last-of-type {
+            margin-bottom: 0;
+        }
+
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <p>UPDATE BOARD</p>
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="chairperson">Chairperson:</label>
+            <input type="file" id="chairperson" name="chairperson" />
+            <input type="text" id="chairperson_name" name="chairperson_name" placeholder="Chairperson Name" />
+        </div>
+
+        <div class="form-group">
+            <label for="vice_chairperson">Vice Chairperson:</label>
+            <input type="file" id="vice_chairperson" name="vice_chairperson" />
+            <input type="text" id="vice_chairperson_name" name="vice_chairperson_name" placeholder="Vice Chairperson Name" />
+        </div>
+
+        <div class="form-group">
+            <label for="General_Secretary_Events_and_Management">General Secretary Events and Management:</label>
+            <input type="file" id="General_Secretary_Events_and_Management" name="General_Secretary_Events_and_Management" />
+            <input type="text" id="General_Secretary_Events_and_Management_name" name="General_Secretary_Events_and_Management_name" placeholder="General Secretary Events and Management Name" />
+        </div>
+
+        <div class="form-group">
+            <label for="General_Secretary_External_Affairs">General Secretary External Affairs:</label>
+            <input type="file" id="General_Secretary_External_Affairs" name="General_Secretary_External_Affairs" />
+            <input type="text" id="General_Secretary_External_Affairs_name" name="General_Secretary_External_Affairs_name" placeholder="General Secretary External Affairs Name" />
+        </div>
+
+        <div class="form-group">
+            <label for="Editor_in_Chief_Newsletter">Editor-in-Chief Newsletter:</label>
+            <input type="file" id="Editor_in_Chief_Newsletter" name="Editor_in_Chief_Newsletter" />
+            <input type="text" id="Editor_in_Chief_Newsletter_name" name="Editor_in_Chief_Newsletter_name" placeholder="Editor-in-Chief Newsletter Name" />
+        </div>
+        
+        <div class="form-group">
+            <label for="Editor_in_Chief_Blogs_and_Documentation">Editor-in-Chief Blogs and Documentation:</label>
+            <input type="file" id="Editor_in_Chief_Blogs_and_Documentation" name="Editor_in_Chief_Blogs_and_Documentation" />
+            <input type="text" id="Editor_in_Chief_Blogs_and_Documentation_name" name="Editor_in_Chief_Blogs_and_Documentation_name" placeholder="Editor-in-Chief Blogs and Documentation Name" />
+        </div>
+
+        <div class="form-group">
+            <label for="Director_of_PR">Director of PR:</label>
+            <input type="file" id="Director_of_PR" name="Director_of_PR" />
+            <input type="text" id="Director_of_PR_name" name="Director_of_PR_name" placeholder="Director of PR Name" />
+        </div>
+
+        <div class="form-group">
+            <label for="Creative_Director">Creative Director:</label>
+            <input type="file" id="Creative_Director" name="Creative_Director" />
+            <input type="text" id="Creative_Director_name" name="Creative_Director_name" placeholder="Creative Director Name" />
+        </div>
+
+        <div class="form-group">
+            <label for="Director_of_Media">Director of Media:</label>
+            <input type="file" id="Director_of_Media" name="Director_of_Media" />
+            <input type="text" id="Director_of_Media_name" name="Director_of_Media_name" placeholder="Director of Media Name" />
+        </div>
+
+        <div class="form-group">
+            <label for="Director_of_Finance">Director of Finance:</label>
+            <input type="file" id="Director_of_Finance" name="Director_of_Finance" />
+            <input type="text" id="Director_of_Finance_name" name="Director_of_Finance_name" placeholder="Director of Finance Name" />
+        </div>
+
+        <div class="form-group">
+            <label for="Video_Editing_Lead_Media">Video Editing Lead Media:</label>
+            <input type="file" id="Video_Editing_Lead_Media" name="Video_Editing_Lead_Media" />
+            <input type="text" id="Video_Editing_Lead_Media_name" name="Video_Editing_Lead_Media_name" placeholder="Video Editing Lead Media Name" />
+        </div>
+
+        <div class="form-group">
+            <label for="HoV_Lead">HoV Lead:</label>
+            <input type="file" id="HoV_Lead" name="HoV_Lead" />
+            <input type="text" id="HoV_Lead_name" name="HoV_Lead_name" placeholder="HoV Lead Name" />
+        </div>
+
+        <input type="submit" />
+    </form>
+    
+</body>
+</html>
